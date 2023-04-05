@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type a number to convert to words : "/>
+
+    <EditText
+        android:id="@+id/numInput"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="type a number"/>
+
+    <Button
+        android:id="@+id/getLetters"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="GET LETTERS"/>
+
+    <TextView
+        android:id="@+id/resText"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+
+
+</LinearLayout>

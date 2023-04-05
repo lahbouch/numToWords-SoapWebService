@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <domain-config>
+        <domain includeSubdomains="true">www.dataaccess.com</domain>
+        <trust-anchors>
+            <certificates src="@raw/test"/>
+        </trust-anchors>
+
+    </domain-config>
+
+</network-security-config>
